@@ -1,0 +1,92 @@
+.giwi-settings-page {
+	max-width: 980px;
+}
+
+.giwi-settings-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+	margin-top: 20px;
+	padding: 8px 24px 24px;
+}
+
+.giwi-settings-card .form-table th {
+	padding-top: 24px;
+	width: 220px;
+}
+
+.giwi-settings-card .form-table td {
+	padding-top: 20px;
+}
+
+.giwi-settings-card .description {
+	color: #50575e;
+	margin-top: 8px;
+}
+
+.giwi-uppercase {
+	text-transform: uppercase;
+}
+
+.giwi-logo-control {
+	align-items: flex-start;
+	display: flex;
+	gap: 18px;
+}
+
+.giwi-logo-preview-wrap {
+	align-items: center;
+	background: linear-gradient(135deg, #f6f7f7, #eef2f6);
+	border: 1px dashed #c3c4c7;
+	border-radius: 12px;
+	display: flex;
+	height: 120px;
+	justify-content: center;
+	overflow: hidden;
+	width: 180px;
+}
+
+.giwi-logo-preview {
+	display: block;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.giwi-logo-placeholder {
+	color: #646970;
+	font-size: 13px;
+	padding: 12px;
+	text-align: center;
+}
+
+.giwi-logo-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-top: 6px;
+}
+
+.giwi-toggle {
+	align-items: center;
+	display: inline-flex;
+	gap: 8px;
+	font-weight: 500;
+}
+
+@media (max-width: 782px) {
+	.giwi-settings-card {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.giwi-logo-control {
+		flex-direction: column;
+	}
+
+	.giwi-settings-card .form-table th,
+	.giwi-settings-card .form-table td {
+		padding-top: 16px;
+	}
+}
