@@ -24,6 +24,7 @@ define( 'GIWI_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'GIWI_VERSION', '1.0.0' );
 
 require_once GIWI_PLUGIN_PATH . 'includes/class-giwi-settings.php';
+require_once GIWI_PLUGIN_PATH . 'includes/class-giwi-product-fields.php';
 
 /**
  * Declare compatibility with WooCommerce custom order tables.
@@ -53,6 +54,7 @@ function giwi_bootstrap() {
 	}
 
 	new GIWI_Settings();
+	new GIWI_Product_Fields();
 }
 add_action( 'plugins_loaded', 'giwi_bootstrap' );
 
